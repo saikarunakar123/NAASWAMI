@@ -1,18 +1,18 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myonline app
+  name: myonline app-rc
 spec:
    replicas: 6
    selector:
-     app: myonline app
+     app: myonline app-pod
    template:
      metadata:
        labels:
-          app: myonline app
+          app: myonline app-pod
      spec:
         containers:
-        - name: myonline app
+        - name: myonline app-container
           image: myonline app
           ports:
           - containerPort: 8080
