@@ -9,10 +9,10 @@ spec:
    template:
      metadata:
        labels:
-          app: myjenkins-pod
+          app: myonline app
      spec:
         containers:
         - name: myonline app
-          image: jenkins:2.60.3
+          image: myonline app
           ports:
           - containerPort: 8080
